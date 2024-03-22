@@ -2,12 +2,17 @@
 using ExemplosFundamentos.Models;
 
 
+int a = 10;
+int b = 20;
 
-DateTime dataAtual = DateTime.Now.AddDays(5);
-
-Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
+int c = a + b; 
 
 
+Console.WriteLine($"A soma de A + B é = {c}");
+
+
+// DateTime dataAtual = DateTime.Now.AddDays(5);
+// Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
 // string apresentacao = "Olá, seja bem vindo!";
 // int quantidade = 1;
 // Console.WriteLine("O primeiro valor é: " + quantidade);
