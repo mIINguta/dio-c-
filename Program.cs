@@ -2,6 +2,16 @@
 using ExemplosFundamentos.Models;
 
 
+int inteiro = 5;
+// para string não tem convert nem parse.
+string a = inteiro.ToString();
+
+Console.WriteLine(a);
+
+
+
+
+
 
 // Cast - Casting (conversão de tipo de variável)
 // int a = Convert.ToInt32("5");
@@ -9,23 +19,14 @@ using ExemplosFundamentos.Models;
 // Parse tbm faz o mesmo processo
 
 // a diferença de Convert e PArse é o tratamento de valores null
-int parse = int.Parse(null); // erro, não aceita o nulo
+// int parse = int.Parse(null); // erro, não aceita o nulo
 
-int convert = Convert.ToInt32(null); // aqui converte para 0;
+// int convert = Convert.ToInt32(null); // aqui converte para 0;
 
-Console.WriteLine("Convert: " + convert);
-
-
-Console.WriteLine("Parse: "+ parse);
+// Console.WriteLine("Convert: " + convert);
 
 
-
-
-
-
-
-
-
+// Console.WriteLine("Parse: "+ parse);
 
 
 // int a = 10;
