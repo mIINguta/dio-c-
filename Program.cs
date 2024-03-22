@@ -7,9 +7,16 @@ using ExemplosFundamentos.Models;
 // int a = Convert.ToInt32("5");
 
 // Parse tbm faz o mesmo processo
-int a = int.Parse("5");
 
-Console.WriteLine(a);
+// a diferença de Convert e PArse é o tratamento de valores null
+int parse = int.Parse(null); // erro, não aceita o nulo
+
+int convert = Convert.ToInt32(null); // aqui converte para 0;
+
+Console.WriteLine("Convert: " + convert);
+
+
+Console.WriteLine("Parse: "+ parse);
 
 
 
