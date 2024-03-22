@@ -2,17 +2,22 @@
 using ExemplosFundamentos.Models;
 
 
-string apresentacao = "Olá, seja bem vindo!";
-int quantidade = 1;
-Console.WriteLine("O primeiro valor é: " + quantidade);
+
+DateTime dataAtual = DateTime.Now.AddDays(5);
+
+Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
 
 
-quantidade = 10;
-Console.WriteLine("O primeiro valor é: " + quantidade);
+// string apresentacao = "Olá, seja bem vindo!";
+// int quantidade = 1;
+// Console.WriteLine("O primeiro valor é: " + quantidade);
 
-double altura = 1.80;
-decimal preco = 1.80M;
-bool condicao = true;
+// quantidade = 10;
+// Console.WriteLine("O primeiro valor é: " + quantidade);
+
+// double altura = 1.80;
+// decimal preco = 1.80M;
+// bool condicao = true;
 
 
 // Console.WriteLine("Valor da variável: " + apresentacao);
