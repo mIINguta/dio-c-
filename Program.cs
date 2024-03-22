@@ -1,23 +1,26 @@
 ﻿using System.Dynamic;
 using ExemplosFundamentos.Models;
 
+Console.WriteLine("Digite uma letra: ");
+string letra = Console.ReadLine();
 
-int quantidadeEmEstoque = 10;
 
-int quantidadeCompra = 1;
+switch(letra){
 
-bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+    Console.Write("É uma vogal!");
+    break;
 
-if (possivelVenda && quantidadeCompra > 0)
-{
-    Console.WriteLine("Venda realizada!");
+    default:
+    Console.WriteLine("Não é uma vogal!");
+    break;
+
+    
 }
-else if(quantidadeCompra <= 0 )
-{
-    Console.WriteLine("Você não comprou nada!");
-}
-else
-Console.WriteLine("Desculpe, não temos a quantidade desejada no estoque");
 
 
 
@@ -32,6 +35,22 @@ Console.WriteLine("Desculpe, não temos a quantidade desejada no estoque");
 
 
 
+// int quantidadeEmEstoque = 10;
+
+// int quantidadeCompra = 1;
+
+// bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
+
+// if (possivelVenda && quantidadeCompra > 0)
+// {
+//     Console.WriteLine("Venda realizada!");
+// }
+// else if(quantidadeCompra <= 0 )
+// {
+//     Console.WriteLine("Você não comprou nada!");
+// }
+// else
+// Console.WriteLine("Desculpe, não temos a quantidade desejada no estoque");
 
 
 
