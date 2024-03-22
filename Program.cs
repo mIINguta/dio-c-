@@ -4,16 +4,22 @@ using ExemplosFundamentos.Models;
 
 string apresentacao = "Olá, seja bem vindo!";
 int quantidade = 1;
+Console.WriteLine("O primeiro valor é: " + quantidade);
+
+
+quantidade = 10;
+Console.WriteLine("O primeiro valor é: " + quantidade);
+
 double altura = 1.80;
 decimal preco = 1.80M;
 bool condicao = true;
 
 
-Console.WriteLine("Valor da variável: " + apresentacao);
-Console.WriteLine("Valor da variável: " + quantidade);
-Console.WriteLine("Valor da variável: " + altura.ToString("0.00")); // tratamento manual para aumentar as casas decimais
-Console.WriteLine("Valor da variável: " + preco);
-Console.WriteLine("Valor da variável: " + condicao);
+// Console.WriteLine("Valor da variável: " + apresentacao);
+// Console.WriteLine("Valor da variável: " + quantidade);
+// Console.WriteLine("Valor da variável: " + altura.ToString("0.00")); // tratamento manual para aumentar as casas decimais
+// Console.WriteLine("Valor da variável: " + preco);
+// Console.WriteLine("Valor da variável: " + condicao);
 
 Pessoa p = new Pessoa();
 
