@@ -11,7 +11,7 @@ namespace ExemplosFundamentos.Models
         public int Idade { get; set; }
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, me chamo {Nome}, tenho {Idade} anos de idade");
+            Console.WriteLine($"Olá, me chamo {Nome}\n tenho {Idade} anos de idade");
         }
     }
 }
