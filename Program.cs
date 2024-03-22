@@ -2,16 +2,63 @@
 using ExemplosFundamentos.Models;
 
 
+int quantidadeEmEstoque = 10;
+
+int quantidadeCompra = 4;
+
+
+if (quantidadeEmEstoque >= quantidadeCompra)
+{
+    Console.WriteLine("Venda realizada!");
+}
+else
+Console.WriteLine("Desculpe, não temos a quantidade desejada no estoque");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// string a = "15";
+// int b = Convert.ToInt32(a);
+
+// Console.Write("Imprimindo: "+ b);
+
+//podemos usar uma forma mais segura, que é o tryParse
+
+// string a = "15c";
+
+// int b = 0;
+
+// int.TryParse(a, out b);
+
+// Console.WriteLine("Resultado de B: " + b);  
+
+// neste exemplo, colocamos 15c, para dar erro na hora de converter para o Int, então
+// automaticamente o resultado de B será 0;
+
+
 
 // C# faz as operações respeitando as ordens naturais
-double a = 4 / 2 + 2;
+// double a = 4 / 2 + 2;
 
-// se quisermos dar prioridades para resolução antes, colocamos () para resolver primeiro
-Console.WriteLine("Resultado: " + a);
+// Console.WriteLine("Resultado: " + a);
+// // se quisermos dar prioridades para resolução antes, colocamos () para resolver primeiro
 
-double b = 4 / (2 + 2);
+// double b = 4 / (2 + 2);
 
-Console.WriteLine("Resultado 2: " + b);
+// Console.WriteLine("Resultado 2: " + b);
 
 
 
