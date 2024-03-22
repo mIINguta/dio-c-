@@ -4,12 +4,17 @@ using ExemplosFundamentos.Models;
 
 int quantidadeEmEstoque = 10;
 
-int quantidadeCompra = 4;
+int quantidadeCompra = 1;
 
+bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
 
-if (quantidadeEmEstoque >= quantidadeCompra)
+if (possivelVenda && quantidadeCompra > 0)
 {
     Console.WriteLine("Venda realizada!");
+}
+else if(quantidadeCompra <= 0 )
+{
+    Console.WriteLine("Você não comprou nada!");
 }
 else
 Console.WriteLine("Desculpe, não temos a quantidade desejada no estoque");
