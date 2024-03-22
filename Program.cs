@@ -2,20 +2,40 @@
 using ExemplosFundamentos.Models;
 
 
-int a = 10;
-int b = 20;
 
-int c = a + b; 
+// Cast - Casting (conversão de tipo de variável)
+// int a = Convert.ToInt32("5");
 
+// Parse tbm faz o mesmo processo
+int a = int.Parse("5");
 
-c = c + 5;
-
-// ou
-// c += 5;
+Console.WriteLine(a);
 
 
 
-Console.WriteLine($"A soma de A + B é = {c}");
+
+
+
+
+
+
+
+
+// int a = 10;
+// int b = 20;
+
+// int c = a + b; 
+
+
+// c = c + 5;
+
+// // ou
+// // c += 5; (35)
+// // c -= 5; (25)
+
+
+
+// Console.WriteLine($"A soma de A + B é = {c}");
 
 
 // DateTime dataAtual = DateTime.Now.AddDays(5);
