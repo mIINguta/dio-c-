@@ -2,11 +2,37 @@
 using ExemplosFundamentos.Models;
 
 
-int inteiro = 5;
-// para string não tem convert nem parse.
-string a = inteiro.ToString();
 
-Console.WriteLine(a);
+
+// int a = 5;
+// double b = a;
+//cast implicito = quando não conseguimos ver, mas a linguagem faz por nós.
+// um inteiro cabe no double.
+
+// int a = 5;
+// long b = a;
+
+//long suporta int também.
+
+
+long a = 5;
+int b = a;
+// aqui não consegue, pois o int não suport ao tipo long
+Console.WriteLine(b);
+
+
+
+
+
+
+
+
+
+// int inteiro = 5;
+// // para string não tem convert nem parse.
+// string a = inteiro.ToString();
+
+// Console.WriteLine(a);
 
 
 
