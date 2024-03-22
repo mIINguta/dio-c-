@@ -3,6 +3,24 @@ using ExemplosFundamentos.Models;
 
 
 
+// C# faz as operações respeitando as ordens naturais
+double a = 4 / 2 + 2;
+
+// se quisermos dar prioridades para resolução antes, colocamos () para resolver primeiro
+Console.WriteLine("Resultado: " + a);
+
+double b = 4 / (2 + 2);
+
+Console.WriteLine("Resultado 2: " + b);
+
+
+
+
+
+
+
+
+
 
 // int a = 5;
 // double b = a;
@@ -15,10 +33,11 @@ using ExemplosFundamentos.Models;
 //long suporta int também.
 
 
-long a = 5;
-int b = a;
+// long a = 5;
+// int b = a;
+
 // aqui não consegue, pois o int não suport ao tipo long
-Console.WriteLine(b);
+// Console.WriteLine(b);
 
 
 
