@@ -8,6 +8,13 @@ int b = 20;
 int c = a + b; 
 
 
+c = c + 5;
+
+// ou
+// c += 5;
+
+
+
 Console.WriteLine($"A soma de A + B é = {c}");
 
 
