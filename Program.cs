@@ -13,6 +13,9 @@ calc.Subtrair(x,y);
 calc.Multiplicar(x,y);
 calc.Dividir(x,y);
 calc.Potencia(x,y);
+calc.Seno(30);
+calc.Coseno(30);
+calc.Tangente(30);
 
 
 
