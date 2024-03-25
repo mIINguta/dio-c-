@@ -18,17 +18,21 @@ Calculadora calc = new Calculadora();
 // calc.Tangente(30);
 
 
-int numeroIncremento = 10;
-Console.WriteLine(numeroIncremento);
-Console.WriteLine("Incrementando o 10");
-numeroIncremento++;
-Console.WriteLine(numeroIncremento);
+calc.RaizQuadrada(7);
 
-int numeroDecremento = 10;
-Console.WriteLine(numeroDecremento);
-Console.WriteLine("Decrementando o 10");
-numeroDecremento--;
-Console.WriteLine(numeroDecremento);
+
+
+// int numeroIncremento = 10;
+// Console.WriteLine(numeroIncremento);
+// Console.WriteLine("Incrementando o 10");
+// numeroIncremento++;
+// Console.WriteLine(numeroIncremento);
+
+// int numeroDecremento = 10;
+// Console.WriteLine(numeroDecremento);
+// Console.WriteLine("Decrementando o 10");
+// numeroDecremento--;
+// Console.WriteLine(numeroDecremento);
 
 
 
