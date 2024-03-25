@@ -1,26 +1,57 @@
 ﻿using System.Dynamic;
 using ExemplosFundamentos.Models;
 
-Console.WriteLine("Digite uma letra: ");
-string letra = Console.ReadLine();
+Calculadora calc = new Calculadora();
+
+Console.WriteLine("Digite o primeiro número: ");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Digite o segundo número: ");
+int y = Convert.ToInt32(Console.ReadLine());
+
+calc.Somar(x,y);
+calc.Subtrair(x,y);
+calc.Multiplicar(x,y);
+calc.Dividir(x,y);
 
 
-switch(letra){
 
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-    Console.Write("É uma vogal!");
-    break;
 
-    default:
-    Console.WriteLine("Não é uma vogal!");
-    break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Console.WriteLine("Digite uma letra: ");
+// string letra = Console.ReadLine();
+
+
+// switch(letra){
+
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//     Console.Write("É uma vogal!");
+//     break;
+
+//     default:
+//     Console.WriteLine("Não é uma vogal!");
+//     break;
 
     
-}
+// }
 
 
 
