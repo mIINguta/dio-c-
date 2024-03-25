@@ -3,19 +3,32 @@ using ExemplosFundamentos.Models;
 
 Calculadora calc = new Calculadora();
 
-Console.WriteLine("Digite o primeiro número: ");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Digite o segundo número: ");
-int y = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Digite o primeiro número: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Digite o segundo número: ");
+// int y = Convert.ToInt32(Console.ReadLine());
 
-calc.Somar(x,y);
-calc.Subtrair(x,y);
-calc.Multiplicar(x,y);
-calc.Dividir(x,y);
-calc.Potencia(x,y);
-calc.Seno(30);
-calc.Coseno(30);
-calc.Tangente(30);
+// calc.Somar(x,y);
+// calc.Subtrair(x,y);
+// calc.Multiplicar(x,y);
+// calc.Dividir(x,y);
+// calc.Potencia(x,y);
+// calc.Seno(30);
+// calc.Coseno(30);
+// calc.Tangente(30);
+
+
+int numeroIncremento = 10;
+Console.WriteLine(numeroIncremento);
+Console.WriteLine("Incrementando o 10");
+numeroIncremento++;
+Console.WriteLine(numeroIncremento);
+
+int numeroDecremento = 10;
+Console.WriteLine(numeroDecremento);
+Console.WriteLine("Decrementando o 10");
+numeroDecremento--;
+Console.WriteLine(numeroDecremento);
 
 
 
@@ -53,7 +66,7 @@ calc.Tangente(30);
 //     Console.WriteLine("Não é uma vogal!");
 //     break;
 
-    
+
 // }
 
 

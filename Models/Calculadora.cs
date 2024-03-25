@@ -39,5 +39,6 @@ namespace ExemplosFundamentos.Models
             double tangente = Math.Tan(radiano);
             Console.WriteLine($"Tangente de {angulo} = {Math.Round(tangente, 4)}");
         }
+        
     }
 }
