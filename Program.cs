@@ -1,7 +1,65 @@
 ﻿using System.Dynamic;
 using ExemplosFundamentos.Models;
 
-Calculadora calc = new Calculadora();
+
+int i, soma = 0;
+do{
+    Console.WriteLine("Digite um número: - (0) para parar ");
+    i = Convert.ToInt32(Console.ReadLine());
+    soma += i;
+}
+while(i != 0 );
+    Console.WriteLine($"O resultado é: {soma}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int i = 0;
+
+// while(i <= 20){
+//     Console.WriteLine($"{i}");
+//     i++;
+// }
+
+
+
+
+
+
+
+// int numero = 5;
+// for(int contador = 0; contador <= 10; contador++){
+//     Console.WriteLine($"{numero} * {contador} = {numero * contador}");
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Calculadora calc = new Calculadora();
 
 // Console.WriteLine("Digite o primeiro número: ");
 // int x = Convert.ToInt32(Console.ReadLine());
@@ -16,12 +74,7 @@ Calculadora calc = new Calculadora();
 // calc.Seno(30);
 // calc.Coseno(30);
 // calc.Tangente(30);
-
-
-calc.RaizQuadrada(7);
-
-
-
+// calc.RaizQuadrada(7);
 // int numeroIncremento = 10;
 // Console.WriteLine(numeroIncremento);
 // Console.WriteLine("Incrementando o 10");
