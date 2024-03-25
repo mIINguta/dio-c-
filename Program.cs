@@ -12,7 +12,7 @@ calc.Somar(x,y);
 calc.Subtrair(x,y);
 calc.Multiplicar(x,y);
 calc.Dividir(x,y);
-
+calc.Potencia(x,y);
 
 
 

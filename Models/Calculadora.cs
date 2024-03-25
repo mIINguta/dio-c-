@@ -17,7 +17,14 @@ namespace ExemplosFundamentos.Models
             Console.WriteLine($"{x} * {y} = {x * y}");
         }
         public void Dividir(int x, int y){
-            Console.WriteLine($"{x} / {y} = {x / y}");
+            decimal resultado = x / y;
+            Console.WriteLine($"{x} / {y} = {resultado}");
+        }
+
+        public void Potencia(int x, int y){
+            double pot = Math.Pow(x,y);
+            Console.WriteLine($"{x}° {y} = {pot}");
+
         }
     }
 }
