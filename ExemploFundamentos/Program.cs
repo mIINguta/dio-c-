@@ -8,8 +8,26 @@ arrayInteiros[1] = 40;
 arrayInteiros[2] = 60;
 
 
+//copiando array para outro
+
+int[] arrayInteirosDobrado = new int[arrayInteiros.Length *2];
+Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+
+foreach(int valor in arrayInteiros){
+    Console.WriteLine(valor);
+}
+
+Console.WriteLine("-----------------");
+
+foreach(int valorDup in arrayInteirosDobrado){
+    Console.WriteLine(valorDup);
+}
+
+
+
 //aumentando array
-Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+//Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
 
 
 
