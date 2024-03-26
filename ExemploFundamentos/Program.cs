@@ -1,28 +1,73 @@
 ﻿using System.Dynamic;
 using ExemploFundamentosCommon.Models;
 
-int [] arrayInteiros = new int[3];
+List<string> listaString = new List<string>();
 
-arrayInteiros[0] = 20;
-arrayInteiros[1] = 40;
-arrayInteiros[2] = 60;
-
-
-//copiando array para outro
-
-int[] arrayInteirosDobrado = new int[arrayInteiros.Length *2];
-Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+listaString.Add("SP");
+listaString.Add("BH");
+listaString.Add("MG");
+listaString.Add("RJ");
 
 
-foreach(int valor in arrayInteiros){
-    Console.WriteLine(valor);
-}
+Console.WriteLine($"Items na minha lista:{listaString.Count} - Capacidade: {listaString.Capacity} ");
 
-Console.WriteLine("-----------------");
 
-foreach(int valorDup in arrayInteirosDobrado){
-    Console.WriteLine(valorDup);
-}
+listaString.Add("SC");
+Console.WriteLine($"Items na minha lista:{listaString.Count} - Capacidade: {listaString.Capacity} ");
+
+listaString.Remove("MG");
+Console.WriteLine($"Items na minha lista:{listaString.Count} - Capacidade: {listaString.Capacity} ");
+
+
+
+
+
+
+
+// for(int contador = 0; contador < listaString.Count; contador++){
+//     Console.WriteLine($"Posição N° {contador} = {listaString[contador]}");
+// }
+
+// Console.WriteLine("------------------");
+
+// foreach(string valor in listaString){
+//     Console.WriteLine(valor);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int [] arrayInteiros = new int[3];
+
+// arrayInteiros[0] = 20;
+// arrayInteiros[1] = 40;
+// arrayInteiros[2] = 60;
+
+
+// //copiando array para outro
+
+// int[] arrayInteirosDobrado = new int[arrayInteiros.Length *2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+
+// foreach(int valor in arrayInteiros){
+//     Console.WriteLine(valor);
+// }
+
+// Console.WriteLine("-----------------");
+
+// foreach(int valorDup in arrayInteirosDobrado){
+//     Console.WriteLine(valorDup);
+// }
 
 
 
