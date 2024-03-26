@@ -7,8 +7,12 @@ arrayInteiros[0] = 20;
 arrayInteiros[1] = 40;
 arrayInteiros[2] = 60;
 
-for(int contador = 0; contador < arrayInteiros.Length;contador++){
-Console.WriteLine($"Posição {contador} do Array: " + arrayInteiros[contador]);
+
+//utilizando for each para percorrer array
+int contador = 0;
+foreach(int valor in arrayInteiros){
+    Console.WriteLine($"Posição {contador} valor: {valor}");
+     contador++;
 }
 
 
@@ -17,8 +21,9 @@ Console.WriteLine($"Posição {contador} do Array: " + arrayInteiros[contador]);
 
 
 
-
-
+// for(int contador = 0; contador < arrayInteiros.Length;contador++){
+// Console.WriteLine($"Posição {contador} do Array: " + arrayInteiros[contador]);
+// }
 // Pessoa pessoa1 = new Pessoa();
 
 // pessoa1.Nome = "Gustavo";
