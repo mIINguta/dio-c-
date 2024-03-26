@@ -1,12 +1,30 @@
 ﻿using System.Dynamic;
 using ExemploFundamentosCommon.Models;
 
-Pessoa pessoa1 = new Pessoa();
+int [] arrayInteiros = new int[3];
 
-pessoa1.Nome = "Gustavo";
-pessoa1.Idade = 20;
+arrayInteiros[0] = 20;
+arrayInteiros[1] = 40;
+arrayInteiros[2] = 60;
 
-pessoa1.Apresentar();
+for(int contador = 0; contador < arrayInteiros.Length;contador++){
+Console.WriteLine($"Posição {contador} do Array: " + arrayInteiros[contador]);
+}
+
+
+
+
+
+
+
+
+
+// Pessoa pessoa1 = new Pessoa();
+
+// pessoa1.Nome = "Gustavo";
+// pessoa1.Idade = 20;
+
+// pessoa1.Apresentar();
 
 
 
