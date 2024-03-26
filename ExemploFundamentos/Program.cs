@@ -8,19 +8,20 @@ arrayInteiros[1] = 40;
 arrayInteiros[2] = 60;
 
 
+//aumentando array
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+
+
+
+
+
 //utilizando for each para percorrer array
-int contador = 0;
-foreach(int valor in arrayInteiros){
-    Console.WriteLine($"Posição {contador} valor: {valor}");
-     contador++;
-}
-
-
-
-
-
-
-
+// int contador = 0;
+// foreach(int valor in arrayInteiros){
+//     Console.WriteLine($"Posição {contador} valor: {valor}");
+//      contador++;
+// }
 // for(int contador = 0; contador < arrayInteiros.Length;contador++){
 // Console.WriteLine($"Posição {contador} do Array: " + arrayInteiros[contador]);
 // }
