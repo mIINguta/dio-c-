@@ -3,8 +3,11 @@
 
 Pessoa pessoa = new Pessoa();
 
-pessoa.Nome = "gUstavoO";
+pessoa.Nome = "Gustavo";
+pessoa.Sobrenome = "Minguta";   
 pessoa.Idade = 23;
+
+
 
 
 
