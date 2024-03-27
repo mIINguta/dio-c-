@@ -10,10 +10,7 @@ namespace exemploExplorando.Models
         private string _nome;
         private string _idade;
         public string Nome { 
-            get{
-                return _nome.ToUpper();
-            }
-            
+            get => _nome.ToUpper();        
             set{
                 if(value == ""){
                     throw new ArgumentException("O nome não pode ser vazio!");
@@ -22,10 +19,7 @@ namespace exemploExplorando.Models
                }
         }
         public int Idade { 
-            get{
-                return Convert.ToInt32(_idade);
-            }
-
+            get => Convert.ToInt32(_idade);
             set{
                 if(value < 0){
                     throw new ArgumentNullException("A idade não pode ser menor que 0!");
