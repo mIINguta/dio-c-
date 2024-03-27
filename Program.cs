@@ -1,9 +1,10 @@
 ﻿using exemploExplorando.Models;
 
 
-
-Pessoa pessoa1 = new Pessoa("Gustavo", "Minguta");
-Pessoa pessoa2 = new Pessoa("Raiane", "Mateus");
+// usando o construtor para enviar valores
+Pessoa pessoa1 = new Pessoa("Gustavo", "Minguta", 23);
+//podemos usar de outra forma para ajudar a quem está lendo o código
+Pessoa pessoa2 = new Pessoa(nome: "Raiane", sobrenome: "Mateus", 28);
 
 
 Curso cursoDeIngles = new Curso();

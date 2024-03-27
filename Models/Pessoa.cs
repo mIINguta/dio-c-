@@ -9,14 +9,16 @@ namespace exemploExplorando.Models
     {
         //construtor
         public Pessoa(){
-            
-        }
-        public Pessoa(string nome, string sobrenome){
 
         }
+        public Pessoa(string nome, string sobrenome, int idade){
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Idade = idade;
+        }
         private string _nome;
-        private string _idade;
         private string _sobrenome;
+        private string _idade;
         //nomeCompleto somente leitura;
         public string NomeCompleto => $"{Nome} {Sobrenome}";
 
