@@ -1,25 +1,47 @@
 ﻿using exemploExplorando.Models;
-//configurar localização do código
-using System.Globalization;
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 
-decimal valorMonetario = 82.99M;
-// Interpolação para formatar como moeda (ele pegou a localização do sistema, no caso BRASIL)
-// Console.WriteLine($"{valorMonetario:C}");
-//outra forma de mudar a cultura de uma string, mesmo com o código setado para US
-Console.WriteLine(valorMonetario.ToString("C1", CultureInfo.CreateSpecificCulture("pt-BR")));
-// c1 representa uma casa decimal, podemos aumentar ou diminuir, podemos trocar tbm por N
-Console.WriteLine(valorMonetario.ToString("N", CultureInfo.CreateSpecificCulture("pt-BR")));
+
+DateTime data = DateTime.Now;
+Console.WriteLine(data);
+//MM - mes  mm - minutos  HH - horas em PM hh - em AM
+Console.WriteLine(data.ToString("dd/MM/yy - HH:mm "));
 
 
-double porcentagem = .3421;
 
-Console.WriteLine(porcentagem.ToString("P1"));
 
-int numero = 123456;
 
-Console.WriteLine(numero.ToString("##-##-##"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// decimal valorMonetario = 82.99M;
+// // Interpolação para formatar como moeda (ele pegou a localização do sistema, no caso BRASIL)
+// // Console.WriteLine($"{valorMonetario:C}");
+// //outra forma de mudar a cultura de uma string, mesmo com o código setado para US
+// Console.WriteLine(valorMonetario.ToString("C1", CultureInfo.CreateSpecificCulture("pt-BR")));
+// // c1 representa uma casa decimal, podemos aumentar ou diminuir, podemos trocar tbm por N
+// Console.WriteLine(valorMonetario.ToString("N", CultureInfo.CreateSpecificCulture("pt-BR")));
+
+
+// double porcentagem = .3421;
+
+// Console.WriteLine(porcentagem.ToString("P1"));
+
+// int numero = 123456;
+
+// Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
