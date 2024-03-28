@@ -2,6 +2,7 @@
 using System.Globalization;
 using exemploExplorando.Models;
 
+try{
 
 string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
@@ -9,6 +10,9 @@ foreach (string linha in linhas){
         Console.WriteLine(linha);
 }
 
+}catch(Exception ex){
+    Console.WriteLine($"Ocorreu uma exeção genérica! {ex.Message}" );
+}
 
 
 
