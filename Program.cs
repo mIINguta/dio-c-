@@ -1,13 +1,34 @@
 ﻿using exemploExplorando.Models;
 
+
+
+decimal valorMonetario = 82.99M;
+// Interpolação para formatar como moeda (ele pegou a localização do sistema, no caso BRASIL)
+Console.WriteLine($"{valorMonetario:C}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ele vai resultador 1020, porque as variáveis tem tipos diferentes
 //tipo string sempre vai ser preferencia quando estivermos concatenando
-string numero1 = "10";
-int numero2 = 20;
+// string numero1 = "10";
+// int numero2 = 20;
 
-string resultado = numero1 + numero2;
+// string resultado = numero1 + numero2;
 
-Console.WriteLine(resultado);
+// Console.WriteLine(resultado);
 
 
 
