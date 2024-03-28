@@ -8,6 +8,15 @@ Console.WriteLine(data);
 Console.WriteLine(data.ToString("dd/MM/yy - HH:mm "));
 
 
+//exibindo somente a data
+Console.WriteLine(data.ToShortDateString());
+
+//exibindo somente a hora
+Console.WriteLine(data.ToShortTimeString());
+
+
+
+
 
 
 
