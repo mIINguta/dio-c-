@@ -25,7 +25,7 @@ namespace exemploExplorando.Models
             Console.WriteLine($"Alunos do curso de: {Nome}");
 
             for(int contador = 0; contador < Alunos.Count; contador++){
-                string textoApresentacao = $"N°" + contador + " - " + Alunos[contador].NomeCompleto;
+                string textoApresentacao = $"N° {contador} - {Alunos[contador].NomeCompleto}";
                 Console.WriteLine(textoApresentacao);
 
             }
