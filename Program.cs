@@ -13,6 +13,15 @@ Console.WriteLine(valorMonetario.ToString("C1", CultureInfo.CreateSpecificCultur
 Console.WriteLine(valorMonetario.ToString("N", CultureInfo.CreateSpecificCulture("pt-BR")));
 
 
+double porcentagem = .3421;
+
+Console.WriteLine(porcentagem.ToString("P1"));
+
+int numero = 123456;
+
+Console.WriteLine(numero.ToString("##-##-##"));
+
+
 
 
 
