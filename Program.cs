@@ -2,19 +2,42 @@
 using System.Globalization;
 using exemploExplorando.Models;
 
-string dataString = "2024-00-20 18:00";
 
-//tryparseExact para tratar exceções de alguma data inválida ser inserida
-bool sucesso = DateTime.TryParseExact(dataString,"yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
-//a saída será zerada, caso a data e hora seja inválida
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
-if(sucesso){
-    Console.WriteLine("Conversão com sucesso! Data: " + data);
+foreach (string linha in linhas){
+        Console.WriteLine(linha);
 }
-else{
-    Console.WriteLine($"{dataString} não é uma data válida!");
-}
-Console.WriteLine(data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// string dataString = "2024-00-20 18:00";
+
+// //tryparseExact para tratar exceções de alguma data inválida ser inserida
+// bool sucesso = DateTime.TryParseExact(dataString,"yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+// //a saída será zerada, caso a data e hora seja inválida
+
+// if(sucesso){
+//     Console.WriteLine("Conversão com sucesso! Data: " + data);
+// }
+// else{
+//     Console.WriteLine($"{dataString} não é uma data válida!");
+// }
+// Console.WriteLine(data);
 
 
 
