@@ -6,7 +6,9 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 decimal valorMonetario = 82.99M;
 // Interpolação para formatar como moeda (ele pegou a localização do sistema, no caso BRASIL)
-Console.WriteLine($"{valorMonetario:C}");
+// Console.WriteLine($"{valorMonetario:C}");
+//outra forma de mudar a cultura de uma string, mesmo com o código setado para US
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")));
 
 
 
