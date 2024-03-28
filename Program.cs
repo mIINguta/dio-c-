@@ -2,7 +2,7 @@
 
 
 // usando o construtor para enviar valores
-Pessoa pessoa1 = new Pessoa("Gustavo", "Minguta", 23);
+Pessoa pessoa1 = new Pessoa(nome: "Gustavo", sobrenome: "Minguta", 23);
 //podemos usar de outra forma para ajudar a quem está lendo o código
 Pessoa pessoa2 = new Pessoa(nome: "Raiane", sobrenome: "Mateus", 28);
 
