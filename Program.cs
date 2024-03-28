@@ -1,18 +1,45 @@
-﻿using exemploExplorando.Models;
+﻿using System.ComponentModel;
+using System.Globalization;
+using exemploExplorando.Models;
 
+string dataString = "2024-00-20 18:00";
 
+//tryparseExact para tratar exceções de alguma data inválida ser inserida
+bool sucesso = DateTime.TryParseExact(dataString,"yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+//a saída será zerada, caso a data e hora seja inválida
 
-DateTime data = DateTime.Now;
+if(sucesso){
+    Console.WriteLine("Conversão com sucesso! Data: " + data);
+}
+else{
+    Console.WriteLine($"{dataString} não é uma data válida!");
+}
 Console.WriteLine(data);
-//MM - mes  mm - minutos  HH - horas em PM hh - em AM
-Console.WriteLine(data.ToString("dd/MM/yy - HH:mm "));
 
 
-//exibindo somente a data
-Console.WriteLine(data.ToShortDateString());
 
-//exibindo somente a hora
-Console.WriteLine(data.ToShortTimeString());
+
+
+
+
+
+
+
+
+
+
+
+// DateTime data = DateTime.Now;
+// Console.WriteLine(data);
+// //MM - mes  mm - minutos  HH - horas em PM hh - em AM
+// Console.WriteLine(data.ToString("dd/MM/yy - HH:mm "));
+
+
+// //exibindo somente a data
+// Console.WriteLine(data.ToShortDateString());
+
+// //exibindo somente a hora
+// Console.WriteLine(data.ToShortTimeString());
 
 
 
