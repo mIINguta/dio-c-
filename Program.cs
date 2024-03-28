@@ -8,7 +8,6 @@ Pessoa pessoa2 = new Pessoa(nome: "Raiane", sobrenome: "Mateus", 28);
 
 
 Curso cursoDeIngles = new Curso();
-
 cursoDeIngles.Nome = "Inglês";
 cursoDeIngles.Alunos = new List<Pessoa>();
 cursoDeIngles.AdicionarAluno(pessoa1);
