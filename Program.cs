@@ -1,5 +1,7 @@
 ﻿using exemploExplorando.Models;
-
+//configurar localização do código
+using System.Globalization;
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 
 decimal valorMonetario = 82.99M;
