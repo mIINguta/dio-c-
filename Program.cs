@@ -3,38 +3,61 @@ using System.Globalization;
 using exemploExplorando.Models;
 
 
-Dictionary<string,string> estados = new Dictionary<string, string>();
+(int, string, string, decimal) tupla  = (1, "Gustavo", "Minguta", 1.75M);
 
-estados.Add("RJ", "Rio de Janeiro");
-estados.Add("SP", "São Paulo");
-estados.Add("BA", "Bahia");
+Console.WriteLine($"Id: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}m");
 
 
-estados.Add("RJJ", "Rio");
 
-foreach(var item in estados){
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
 
-Console.WriteLine("------------");
 
-estados.Remove("RJJ"); // removendo valor
 
-estados["SP"] = "São Paulo (Alterado)"; // alterando valor, sempre pela chave 
 
-foreach(var item in estados){
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-Console.WriteLine("-----------");
-string chave = "BA";
-Console.WriteLine($"Consultando valor: {chave}");
 
-if(estados.ContainsKey(chave)){
-    Console.WriteLine($"Valor existente:{estados[chave]}");
-}
-else{
-    Console.Write($"Valor não encontrado. A chave: {chave} pode ser inserida!");
-}
+
+
+
+
+
+
+
+
+
+// Dictionary<string,string> estados = new Dictionary<string, string>();
+
+// estados.Add("RJ", "Rio de Janeiro");
+// estados.Add("SP", "São Paulo");
+// estados.Add("BA", "Bahia");
+
+
+// estados.Add("RJJ", "Rio");
+
+// foreach(var item in estados){
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+// Console.WriteLine("------------");
+
+// estados.Remove("RJJ"); // removendo valor
+
+// estados["SP"] = "São Paulo (Alterado)"; // alterando valor, sempre pela chave 
+
+// foreach(var item in estados){
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+// Console.WriteLine("-----------");
+// string chave = "BA";
+// Console.WriteLine($"Consultando valor: {chave}");
+
+// if(estados.ContainsKey(chave)){
+//     Console.WriteLine($"Valor existente:{estados[chave]}");
+// }
+// else{
+//     Console.Write($"Valor não encontrado. A chave: {chave} pode ser inserida!");
+// }
 
 // Stack<int> pilha = new Stack<int>();
 // // lifo - last in first out, fazendo a pilha ficar de cabeça para baixo
