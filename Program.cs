@@ -2,27 +2,49 @@
 using System.Globalization;
 using exemploExplorando.Models;
 
-try{
+new ExemploExcecao().Metodo1();
+// como fizemos uma cascata de métodos, a exceção no metodo 4
+//vai sendo jogada para cima, até acharem um bloco catch.
+// como não tem o bloco catch em nenhum método, o programa se encerra.
 
-string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
-foreach (string linha in linhas){
-        Console.WriteLine(linha);
-}
-}
-catch(FileNotFoundException ex){
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
-}
-catch(DirectoryNotFoundException ex){
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho do arquivo não encontrado. {ex.Message}");
-}
-catch(Exception ex){
-    Console.WriteLine($"Ocorreu uma exeção genérica! {ex.Message}" );
-}
-finally{
-    //sempre irá rodar, independente se o programa falhar ou não
-    Console.WriteLine("Chegou até aqui!");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// try{
+
+// string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+// foreach (string linha in linhas){
+//         Console.WriteLine(linha);
+// }
+// }
+// catch(FileNotFoundException ex){
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+// }
+// catch(DirectoryNotFoundException ex){
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho do arquivo não encontrado. {ex.Message}");
+// }
+// catch(Exception ex){
+//     Console.WriteLine($"Ocorreu uma exeção genérica! {ex.Message}" );
+// }
+// finally{
+//     //sempre irá rodar, independente se o programa falhar ou nãogit
+//     Console.WriteLine("Chegou até aqui!");
+// }
 
 
 
