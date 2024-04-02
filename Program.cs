@@ -5,6 +5,10 @@ using exemploExplorando.Models;
 
 (int, string, string, decimal) tupla  = (1, "Gustavo", "Minguta", 1.75M);
 
+ValueTuple<int, string, string, decimal> outroExemploTupla = (2, "Neymá", "Juniu", 1.75M);
+
+var outroExemploTuplaCreate = Tuple.Create(2, "Neymá", "Juniu", 1.75M);
+
 Console.WriteLine($"Id: {tupla.Item1}");
 Console.WriteLine($"Nome: {tupla.Item2}");
 Console.WriteLine($"Sobrenome: {tupla.Item3}");
