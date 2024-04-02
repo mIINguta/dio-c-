@@ -19,6 +19,10 @@ catch(DirectoryNotFoundException ex){
 catch(Exception ex){
     Console.WriteLine($"Ocorreu uma exeção genérica! {ex.Message}" );
 }
+finally{
+    //sempre irá rodar, independente se o programa falhar ou não
+    Console.WriteLine("Chegou até aqui!");
+}
 
 
 
