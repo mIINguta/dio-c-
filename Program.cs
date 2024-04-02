@@ -2,7 +2,47 @@
 using System.Globalization;
 using exemploExplorando.Models;
 
-new ExemploExcecao().Metodo1();
+
+Queue<int> fila = new Queue<int>();
+
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(6);
+fila.Enqueue(8);
+
+
+foreach(int f in fila){
+    Console.WriteLine(f);
+}
+
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove sempre o primeiro da fila
+fila.Enqueue(10);
+
+foreach(int f in fila){
+    Console.WriteLine(f);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new ExemploExcecao().Metodo1();
 // como fizemos uma cascata de métodos, a exceção no metodo 4
 //vai sendo jogada para cima, até acharem um bloco catch.
 // como não tem o bloco catch em nenhum método, o programa se encerra.
