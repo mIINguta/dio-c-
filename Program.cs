@@ -9,10 +9,17 @@ string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 foreach (string linha in linhas){
         Console.WriteLine(linha);
 }
-
-}catch(Exception ex){
+}
+catch(FileNotFoundException ex){
+    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+}
+catch(DirectoryNotFoundException ex){
+    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho do arquivo não encontrado. {ex.Message}");
+}
+catch(Exception ex){
     Console.WriteLine($"Ocorreu uma exeção genérica! {ex.Message}" );
 }
+
 
 
 
