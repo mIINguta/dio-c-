@@ -3,26 +3,44 @@ using System.Globalization;
 using exemploExplorando.Models;
 
 
+Dictionary<string,string> estados = new Dictionary<string, string>();
 
-Stack<int> pilha = new Stack<int>();
-// lifo - last in first out, fazendo a pilha ficar de cabeça para baixo
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Belo Horizonte");
 
-pilha.Push(3);
-pilha.Push(6);
-pilha.Push(9);
-pilha.Push(12);
 
-foreach(int p in pilha){
-    Console.WriteLine(p);
+foreach(var item in estados){
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
-Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
 
-pilha.Push(20);
+estados.Add("RJ", "Rio");
 
 
-foreach(int p in pilha){
-    Console.WriteLine(p);
-}
+
+
+
+
+
+// Stack<int> pilha = new Stack<int>();
+// // lifo - last in first out, fazendo a pilha ficar de cabeça para baixo
+
+// pilha.Push(3);
+// pilha.Push(6);
+// pilha.Push(9);
+// pilha.Push(12);
+
+// foreach(int p in pilha){
+//     Console.WriteLine(p);
+// }
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+
+// pilha.Push(20);
+
+
+// foreach(int p in pilha){
+//     Console.WriteLine(p);
+// }
 
 
 
