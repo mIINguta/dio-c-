@@ -3,24 +3,59 @@ using System.Globalization;
 using exemploExplorando.Models;
 
 
-Queue<int> fila = new Queue<int>();
 
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
+Stack<int> pilha = new Stack<int>();
+// lifo - last in first out, fazendo a pilha ficar de cabeça para baixo
+
+pilha.Push(3);
+pilha.Push(6);
+pilha.Push(9);
+pilha.Push(12);
+
+foreach(int p in pilha){
+    Console.WriteLine(p);
+}
+Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+
+pilha.Push(20);
 
 
-foreach(int f in fila){
-    Console.WriteLine(f);
+foreach(int p in pilha){
+    Console.WriteLine(p);
 }
 
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove sempre o primeiro da fila
-fila.Enqueue(10);
 
-foreach(int f in fila){
-    Console.WriteLine(f);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+
+
+// foreach(int f in fila){
+//     Console.WriteLine(f);
+// }
+
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove sempre o primeiro da fila
+// fila.Enqueue(10);
+
+// foreach(int f in fila){
+//     Console.WriteLine(f);
+// }
 
 
 
