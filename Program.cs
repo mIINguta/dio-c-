@@ -3,22 +3,46 @@ using System.Globalization;
 using exemploExplorando.Models;
 
 
-LeituraArquivo arquivo = new LeituraArquivo();
 
-// para aplicar o descarte de variável usamos " _ " no lugar da váriavel, segue o exemplo;
-// não queremos quantidade de linha
-var(sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+Pessoa p1 = new Pessoa("Gustavo", "Minguta", 23);
 
-if(sucesso){
-    Console.WriteLine("Funcionou!!");
-    foreach(string linha in linhasArquivo){
-        Console.WriteLine(linha);
-    }
+// desconstrutor
+(string nome, string sobrenome, int idade) = p1;
 
-    
-}else{
-    Console.WriteLine("Não foi possível ler o arquivo");
-}
+Console.WriteLine($"{nome} {sobrenome}");
+Console.WriteLine("-------------");
+p1.Apresentar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// // para aplicar o descarte de variável usamos " _ " no lugar da váriavel, segue o exemplo;
+// // não queremos quantidade de linha
+// var(sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// if(sucesso){
+//     Console.WriteLine("Funcionou!!");
+//     foreach(string linha in linhasArquivo){
+//         Console.WriteLine(linha);
+//     }    
+// }else{
+//     Console.WriteLine("Não foi possível ler o arquivo");
+// }
 
 
 

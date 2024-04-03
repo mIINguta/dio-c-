@@ -14,7 +14,7 @@ namespace exemploExplorando.Models
                 return (true, linhas, linhas.Count()); // caso tenha sucesso  
             
             }catch (Exception ex){
-                return (false, new string[0], 0); // caso ocorra uma exceção    
+                return (false, new string[0], 0); // caso ocorra uma exceção
             }
         }
     }

@@ -16,6 +16,12 @@ namespace exemploExplorando.Models
             Sobrenome = sobrenome;
             Idade = idade;
         }
+
+        public void Deconstruct(out string nome, out string sobrenome, out int idade){
+            nome = Nome;
+            sobrenome = Sobrenome;
+            idade = Idade;
+        }
         private string _nome;
         private string _sobrenome;
         private string _idade;
