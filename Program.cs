@@ -3,15 +3,42 @@ using System.Globalization;
 using exemploExplorando.Models;
 
 
+Console.WriteLine("Digite um número: ");
+int numero = Convert.ToInt32(Console.ReadLine());
 
-Pessoa p1 = new Pessoa("Gustavo", "Minguta", 23);
+if(numero % 2 == 0){
+    Console.WriteLine($"O número {numero} é par!");
+}else {
+    Console.WriteLine($"O número {numero} é impar!");
+}
 
-// desconstrutor
-(string nome, string sobrenome, int idade) = p1;
+// agora utilizando o if ternário
 
-Console.WriteLine($"{nome} {sobrenome}");
-Console.WriteLine("-------------");
-p1.Apresentar();
+Console.WriteLine($"O numero {numero} é " + (numero % 2 == 0 ? "par": "ímpar"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Gustavo", "Minguta", 23);
+
+// // desconstrutor
+// (string nome, string sobrenome, int idade) = p1;
+
+// Console.WriteLine($"{nome} {sobrenome}");
+// Console.WriteLine("-------------");
+// p1.Apresentar();
 
 
 
