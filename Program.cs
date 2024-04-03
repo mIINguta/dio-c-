@@ -3,16 +3,52 @@ using System.Globalization;
 using exemploExplorando.Models;
 
 
-(int, string, string, decimal) tupla  = (1, "Gustavo", "Minguta", 1.75M);
+LeituraArquivo arquivo = new LeituraArquivo();
 
-ValueTuple<int, string, string, decimal> outroExemploTupla = (2, "Neymá", "Juniu", 1.75M);
+var(sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
-var outroExemploTuplaCreate = Tuple.Create(2, "Neymá", "Juniu", 1.75M);
+if(sucesso){
+    Console.WriteLine("Quantidade de linhas do arquivo: "+ quantidadeLinhas);
+    foreach(string linha in linhasArquivo){
+        Console.WriteLine(linha);
+    }
 
-Console.WriteLine($"Id: {tupla.Item1}");
-Console.WriteLine($"Nome: {tupla.Item2}");
-Console.WriteLine($"Sobrenome: {tupla.Item3}");
-Console.WriteLine($"Altura: {tupla.Item4}m");
+    
+}else{
+    Console.WriteLine("Não foi possível ler o arquivo");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// (int, string, string, decimal) tupla  = (1, "Gustavo", "Minguta", 1.75M);
+// // outras formas de criar tuplas
+// ValueTuple<int, string, string, decimal> outroExemploTupla = (2, "Neymá", "Juniu", 1.75M);
+
+// var outroExemploTuplaCreate = Tuple.Create(2, "Neymá", "Juniu", 1.75M);
+
+// //acima, maneiras para criar tuplas
+
+// Console.WriteLine($"Id: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}m");
 
 
 
