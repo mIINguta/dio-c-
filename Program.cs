@@ -4,11 +4,15 @@ using exemploExplorando.Models;
 using Newtonsoft.Json;
 
 Venda venda = new Venda(1, "Coca-Cola", 8.00M);
-
+//serializando venda e passando para uma string
 string serializado = JsonConvert.SerializeObject(venda, Formatting.Indented);
+
+//criando uma arquivo em json 
+File.WriteAllText("Arquivos/vendas.json", serializado);
 
 
 Console.WriteLine(serializado);
+
 
 
 
