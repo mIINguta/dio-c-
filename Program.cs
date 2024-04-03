@@ -4,12 +4,16 @@ using exemploExplorando.Models;
 using Newtonsoft.Json;
 
 
+
+
+DateTime dataAtual = DateTime.Now;
+
 //criando uma coleção / lista de vendas
 List<Venda> listaVenda = new List<Venda>();
 
 //inserindo valores
-Venda venda = new Venda(1, "Coca-Cola", 8.00M);
-Venda venda2 = new Venda(2, "Fanta Uva", 6.00M);
+Venda venda = new Venda(1, "Coca-Cola", 8.00M, dataAtual);
+Venda venda2 = new Venda(2, "Fanta Uva", 6.00M, dataAtual);
 
 //adicionando cada venda á lista.
 listaVenda.Add(venda);
