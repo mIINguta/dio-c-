@@ -5,10 +5,12 @@ using exemploExplorando.Models;
 
 LeituraArquivo arquivo = new LeituraArquivo();
 
-var(sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+// para aplicar o descarte de variável usamos " _ " no lugar da váriavel, segue o exemplo;
+// não queremos quantidade de linha
+var(sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
 if(sucesso){
-    Console.WriteLine("Quantidade de linhas do arquivo: "+ quantidadeLinhas);
+    Console.WriteLine("Funcionou!!");
     foreach(string linha in linhasArquivo){
         Console.WriteLine(linha);
     }
