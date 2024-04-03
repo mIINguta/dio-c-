@@ -1,13 +1,13 @@
 [
   {
     "Id": 1,
-    "Produto": "Coca-Cola",
+    "Nome_Produto": "Coca-Cola",
     "Preco": 8.00,
     "DataVenda": "2024-04-03T16:58:57.9447022-03:00"
   },
   {
     "Id": 2,
-    "Produto": "Fanta Uva",
+    "Nome_Produto": "Fanta Uva",
     "Preco": 6.00,
     "DataVenda": "2024-04-03T16:58:57.9447022-03:00"
   }
