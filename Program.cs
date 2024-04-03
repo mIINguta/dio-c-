@@ -1,20 +1,48 @@
 ﻿using System.ComponentModel;
 using System.Globalization;
 using exemploExplorando.Models;
+using Newtonsoft.Json;
+
+Venda venda = new Venda(1, "Coca-Cola", 8.00M);
+
+string serializado = JsonConvert.SerializeObject(venda, Formatting.Indented);
 
 
-Console.WriteLine("Digite um número: ");
-int numero = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(serializado);
 
-if(numero % 2 == 0){
-    Console.WriteLine($"O número {numero} é par!");
-}else {
-    Console.WriteLine($"O número {numero} é impar!");
-}
 
-// agora utilizando o if ternário
 
-Console.WriteLine($"O numero {numero} é " + (numero % 2 == 0 ? "par": "ímpar"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Console.WriteLine("Digite um número: ");
+// int numero = Convert.ToInt32(Console.ReadLine());
+
+// if(numero % 2 == 0){
+//     Console.WriteLine($"O número {numero} é par!");
+// }else {
+//     Console.WriteLine($"O número {numero} é impar!");
+// }
+
+// // agora utilizando o if ternário
+
+// Console.WriteLine($"O numero {numero} é " + (numero % 2 == 0 ? "par": "ímpar"));
 
 
 

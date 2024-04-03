@@ -13,3 +13,6 @@ C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\exemploExplorando\obj\Deb
 C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\exemploExplorando\obj\Debug\net8.0\exemploExplorando.pdb
 C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\exemploExplorando\obj\Debug\net8.0\exemploExplorando.genruntimeconfig.cache
 C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\exemploExplorando\obj\Debug\net8.0\ref\exemploExplorando.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\exemploExplorando\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\exemploExplorando\obj\Debug\net8.0\exemploExplorando.csproj.AssemblyReference.cache
+C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\exemploExplorando\obj\Debug\net8.0\exemploE.2494EDC2.Up2Date
