@@ -3,9 +3,20 @@ using System.Globalization;
 using exemploExplorando.Models;
 using Newtonsoft.Json;
 
+
+//criando uma coleção / lista de vendas
+List<Venda> listaVenda = new List<Venda>();
+
+//inserindo valores
 Venda venda = new Venda(1, "Coca-Cola", 8.00M);
+Venda venda2 = new Venda(2, "Fanta Uva", 6.00M);
+
+//adicionando cada venda á lista.
+listaVenda.Add(venda);
+listaVenda.Add(venda2);
+
 //serializando venda e passando para uma string
-string serializado = JsonConvert.SerializeObject(venda, Formatting.Indented);
+string serializado = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
 
 //criando uma arquivo em json 
 File.WriteAllText("Arquivos/vendas.json", serializado);

@@ -1,5 +1,12 @@
-{
-  "Id": 1,
-  "Produto": "Coca-Cola",
-  "Preco": 8.00
-}
+[
+  {
+    "Id": 1,
+    "Produto": "Coca-Cola",
+    "Preco": 8.00
+  },
+  {
+    "Id": 2,
+    "Produto": "Fanta Uva",
+    "Preco": 6.00
+  }
+]
