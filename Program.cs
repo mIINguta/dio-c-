@@ -6,27 +6,55 @@ using Newtonsoft.Json;
 
 
 
-DateTime dataAtual = DateTime.Now;
+string caminho = ("Arquivos/vendas.json");
+string conteudo = File.ReadAllText(caminho);
 
-//criando uma coleção / lista de vendas
-List<Venda> listaVenda = new List<Venda>();
+List<Venda> vendas = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
 
-//inserindo valores
-Venda venda = new Venda(1, "Coca-Cola", 8.00M, dataAtual);
-Venda venda2 = new Venda(2, "Fanta Uva", 6.00M, dataAtual);
-
-//adicionando cada venda á lista.
-listaVenda.Add(venda);
-listaVenda.Add(venda2);
-
-//serializando venda e passando para uma string
-string serializado = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
-
-//criando uma arquivo em json 
-File.WriteAllText("Arquivos/vendas.json", serializado);
+foreach(Venda venda in vendas){
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco} " + "Data: "+ venda.DataVenda.ToString("dd/MM/yyyy"));
+}
 
 
-Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DateTime dataAtual = DateTime.Now;
+
+// //criando uma coleção / lista de vendas
+// List<Venda> listaVenda = new List<Venda>();
+
+// //inserindo valores
+// Venda venda = new Venda(1, "Coca-Cola", 8.00M, dataAtual);
+// Venda venda2 = new Venda(2, "Fanta Uva", 6.00M, dataAtual);
+
+// //adicionando cada venda á lista.
+// listaVenda.Add(venda);
+// listaVenda.Add(venda2);
+
+// //serializando venda e passando para uma string
+// string serializado = JsonConvert.SerializeObject(listaVenda, Formatting.Indented);
+
+// //criando uma arquivo em json 
+// File.WriteAllText("Arquivos/vendas.json", serializado);
+
+
+// Console.WriteLine(serializado);
 
 
 
