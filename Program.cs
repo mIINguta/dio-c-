@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 string caminho = ("Arquivos/vendas.json");
 string conteudo = File.ReadAllText(caminho);
 
+// aqui usamos o JsonConvert, passamos o deserialize e passamos a lista de Venda, depois passamos o conteudo, que recebe o JSON
 List<Venda> vendas = JsonConvert.DeserializeObject<List<Venda>>(conteudo);
 
 foreach(Venda venda in vendas){
