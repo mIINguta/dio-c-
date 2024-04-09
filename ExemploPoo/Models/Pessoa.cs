@@ -12,7 +12,8 @@ namespace ExemploPoo.Models
         public int Idade { get; set; }
         public string Email { get; set; }
 
-        public void Apresentar(){
+        //virtual deixa a classe filha sobrescrever o método
+        public virtual void Apresentar(){
             Console.Write($"Olá meu nome é {Nome} e tenho {Idade} anos!");
         }
     }
