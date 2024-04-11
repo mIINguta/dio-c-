@@ -3,11 +3,20 @@
 
 
 
+Computador c = new Computador();
 
-Corrente c1 = new Corrente();
-c1.saldoAtual = 1400;
-c1.Creditar(1000);
-c1.ExibirSaldo();
+Console.WriteLine(c.ToString());
+
+
+
+
+
+
+
+// Corrente c1 = new Corrente();
+// c1.saldoAtual = 1400;
+// c1.Creditar(1000);
+// c1.ExibirSaldo();
 
 
 
