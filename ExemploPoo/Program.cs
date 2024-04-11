@@ -1,11 +1,21 @@
-﻿using ExemploPoo.Models;
+﻿using ExemploPoo.Interfaces;
+using ExemploPoo.Models;
+
+
+//instanciando uma calculadora
+Calculadora calc = new Calculadora();
+
+
+Console.WriteLine(calc.Somar(3,2));
 
 
 
 
-Computador c = new Computador();
 
-Console.WriteLine(c.ToString());
+
+// Computador c = new Computador();
+
+// Console.WriteLine(c.ToString());
 
 
 
