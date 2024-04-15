@@ -8,7 +8,7 @@ SELECT SUM(Preco) SomaProdutos FROM Produtos
 SELECT SUM (Preco) ProdutosG FROM Produtos
 WHERE Tamanho = 'G'
 
---Descobrir Valor m·ximo
+--Descobrir Valor m√°ximo
 SELECT MAX(Preco) FROM Produtos
 
 --Descobrir Valor minimo
@@ -69,6 +69,18 @@ Estado char(2) NULL,
 
 CONSTRAINT FK_Enderecos_Clientes FOREIGN KEY(IdCliente) REFERENCES Clientes(Id)
 )
+
+-- Criando um INNER JOIN
+ SELECT
+*
+ FROM 
+ Clientes
+ INNER JOIN Enderecos ON Clientes.Id = Enderecos.IdCliente
+ WHERE Clientes.Id = 4
+
+
+
+
 
 
 
