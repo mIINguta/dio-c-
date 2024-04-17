@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\webApi\\webApi.csproj": {}
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\webApi\\webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\webApi\\webApi.csproj": {
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\webApi\\webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\webApi\\webApi.csproj",
+        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\webApi\\webApi.csproj",
         "projectName": "webApi",
-        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\webApi\\webApi.csproj",
+        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\webApi\\webApi.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\webApi\\obj\\",
+        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
