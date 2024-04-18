@@ -7,13 +7,12 @@ namespace webApi.Entities
 {
     public class Contato
     {
-        public Contato(string id, string nome, string telefone, bool ativo){
+        public Contato(int id, string nome, string telefone, bool ativo){
             Id = id;
-            Nome = nome, 
-            Telefone = telefone,
+            Nome = nome; 
+            Telefone = telefone;
             Ativo = ativo;
         }
-    
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Telefone { get; set; }
