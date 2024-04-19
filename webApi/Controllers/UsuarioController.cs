@@ -25,7 +25,6 @@ namespace webApi.Controllers
             var mensagem = $"Olá, {nome}. Seja bem vindo!";
             
             return Ok(new {mensagem});
-
         }
     }
 }
