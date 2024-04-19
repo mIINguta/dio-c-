@@ -25,5 +25,16 @@ namespace webApi.Controllers
             return Ok(contato);
 
         }        
+
+        [HttpGet("{id}")]
+        public IActionResult ObterPorId(int id){
+            var contato = _context.Contatos.Find(id); // contatos é o dbset
+            
+            if(contato == null){
+                return NotFound();
+            }
+            
+            return Ok(contato);    
+        }
     }
 }
