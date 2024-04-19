@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using webApi.Context;
 using webApi.Entities;
 
@@ -53,7 +54,19 @@ namespace webApi.Controllers
             _context.SaveChanges();
             return Ok(contatoBanco);
 
+        }
+        [HttpDelete("{id}")]
+        public IActionResult DeletarContato(int id){
+            var contatoBanco = _context.Contatos.Find(id);
 
+           if (contatoBanco == null){
+            return NotFound();
+           }
+
+           _context.Contatos.Remove(contatoBanco);
+           _context.SaveChanges();
+
+           return NoContent();
         }
     }
 }
