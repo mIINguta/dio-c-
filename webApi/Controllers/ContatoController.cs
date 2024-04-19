@@ -37,6 +37,27 @@ namespace webApi.Controllers
             
             return Ok(contato);    
         }
+        [HttpGet("ObterPorNome")]
+        public IActionResult ObterPorNome(string nome){
+            var contato = _context.Contatos.Where(x => x.Nome.Contains(nome));
+
+            if (contato == null){
+                return NotFound();
+            }
+
+            return Ok(contato);
+        }
+        [HttpGet("ObterContatos")]
+        public IActionResult ObterTodos(){
+            var contatos = _context.Contatos.Select(_context => _context);
+
+            if(contatos == null){
+                return NotFound();
+            }
+
+            return Ok(contatos);
+
+        }
         
         [HttpPut("{id}")]
         public IActionResult AtualizarContato(int id, Contato contato){
