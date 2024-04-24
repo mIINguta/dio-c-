@@ -37,4 +37,17 @@ public class CalculadoraTestes
             //Assert - Validar se os passos acima tem o resultado esperado!
             Assert.Equal(15, resultado);
     }
+    [Fact]
+
+    public void Inserir2ERetornarTrue(){
+        //Arrange 
+
+        int num = 2;
+
+        //Act 
+        bool resultado = _calc.EhPar(num);
+
+        //Assert
+        Assert.Equal(true, resultado);
+    }
 }
