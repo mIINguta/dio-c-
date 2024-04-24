@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Calculadora
-build_property.ProjectDir = C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\testes\Calculadora\
+build_property.ProjectDir = C:\Users\gusta\OneDrive\Área de Trabalho\Dev\.NET DIO\Testes\Calculadora\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

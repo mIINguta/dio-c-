@@ -1708,6 +1708,16 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Calculadora/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Calculadora.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculadora.dll": {}
+        }
       }
     }
   },
@@ -5497,10 +5507,16 @@
         "xunit.runner.visualstudio.2.5.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Calculadora/1.0.0": {
+      "type": "project",
+      "path": "../Calculadora/Calculadora.csproj",
+      "msbuildProject": "../Calculadora/Calculadora.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Calculadora >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.5.3",
@@ -5513,11 +5529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
       "projectName": "CalculadoraTestes",
-      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
+      "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
       "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\obj\\",
+      "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5533,7 +5549,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj": {
+              "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

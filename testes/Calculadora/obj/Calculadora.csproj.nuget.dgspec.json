@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\Calculadora\\Calculadora.csproj": {}
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\Calculadora\\Calculadora.csproj": {
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj",
         "projectName": "Calculadora",
-        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\Calculadora\\Calculadora.csproj",
+        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",

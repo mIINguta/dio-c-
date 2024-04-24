@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\CalculadoraTestes.csproj": {}
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\CalculadoraTestes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\CalculadoraTestes.csproj": {
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\CalculadoraTestes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
+        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
         "projectName": "CalculadoraTestes",
-        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
+        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\CalculadoraTestes.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\testes\\CalculadoraTestes\\obj\\",
+        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\CalculadoraTestes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +27,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj": {
+                "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -62,6 +66,66 @@
               "version": "[2.5.3, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj",
+        "projectName": "Calculadora",
+        "projectPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\Calculadora.csproj",
+        "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gusta\\OneDrive\\Área de Trabalho\\Dev\\.NET DIO\\Testes\\Calculadora\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
