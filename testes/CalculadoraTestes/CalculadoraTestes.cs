@@ -48,6 +48,19 @@ public class CalculadoraTestes
         bool resultado = _calc.EhPar(num);
 
         //Assert
-        Assert.Equal(true, resultado);
+        Assert.True(resultado);
+    }
+
+    [Theory] 
+    [InlineData(2)] // permite testar varios valores
+    [InlineData(4)]
+    [InlineData(6)]
+    [InlineData(8)]
+    [InlineData(10)]
+    public void DeveVerificarSeOsNumeroSaoParesERetornarVerdadeiro(int numero){ /// esse numero como parametro será cada numero do inlineData
+        //Act
+        bool resultado = _calc.EhPar(numero);
+        //Assert
+        Assert.True(resultado);
     }
 }
