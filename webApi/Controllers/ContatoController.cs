@@ -24,7 +24,7 @@ namespace webApi.Controllers
             _context.SaveChanges();
 
             return CreatedAtAction(nameof(ObterPorId), new {id = contato.Id}, contato);// retorna a rota que pode ser visualizada a entrada do registro
-
+            // retorna a função, o id recem criado e as informações passadas no contato.
         }        
 
         [HttpGet("{id}")]
