@@ -63,10 +63,11 @@ public class UnitTest1
 
         calc.Somar(1,2);
         calc.Multiplicar(3,2);
+        calc.Dividir(3,5);
 
         var lista = calc.Historico();
 
         Assert.NotEmpty(calc.Historico());
-        Assert.Equal(2, lista.Count());
+        Assert.Equal(3, lista.Count());
     }
 }
